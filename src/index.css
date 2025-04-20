@@ -49,41 +49,6 @@
   }
 }
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply font-serif tracking-tight;
-  }
-}
-
-@layer components {
-  .elegant-card {
-    @apply bg-white rounded-xl shadow-elegant hover:shadow-glow transition-all duration-300;
-  }
-
-  .elegant-button {
-    @apply bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white font-medium px-6 py-2 rounded-full shadow-md hover:shadow-lg transition-all duration-300;
-  }
-
-  .elegant-input {
-    @apply border border-gray-200 rounded-lg px-4 py-2 focus:ring-2 focus:ring-rose-500/50 focus:border-rose-500 transition-all duration-300;
-  }
-
-  .shimmer-effect {
-    @apply relative overflow-hidden before:absolute before:inset-0 before:bg-shimmer before:bg-[length:200%_100%] before:animate-shimmer;
-  }
-}
 
 .perspective {
   perspective: 1000px;
